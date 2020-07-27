@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ("partials/head") %>
+</head>
+<body>
+  <header>
+    <%- include("partials/header") %>
+  </header>
+  <main>
+    <h2><%= message %></h2>
+
+    <ul>
+      <% students.forEach( student => { %>
+        <li><%= student.name %> got <%= student.grade %></li>
+      <% }) %>
+    </ul>
+  </main>
+  <footer>
+    <%- include("partials/footer") %>
+  </footer>
+</body>
+</html>
